@@ -1,0 +1,247 @@
+.h1_block_line {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.site-main__head {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .site-main__head {
+    flex-wrap: wrap;
+  }
+}
+.site-main__left {
+  flex: 0 0 50%;
+  max-height: 600px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 992px) {
+  .site-main__left {
+    height: 300px;
+    flex: 1 1 auto;
+  }
+}
+.site-main__left img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.site-main__right {
+  flex: 1 1 auto;
+}
+.site-main__section {
+  margin-top: 60px;
+}
+.site-main__buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 371px) {
+  .site-main__btn {
+    width: 100%;
+  }
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+}
+.cost__with {
+  color: #000000;
+}
+.cost__oldcost {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: #000000;
+}
+.cost__cost span {
+  font-size: 28px;
+  color: #0084ff;
+  font-weight: 800;
+}
+
+.btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  padding: 12px 15px;
+  transition: all 0.3s ease 0s;
+}
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.btn-blue {
+  background-color: #235ce2;
+}
+.btn-blue:hover {
+  background-color: #fff;
+  outline: 1px solid #235ce2;
+  color: #235ce2;
+}
+.btn-blue:hover svg {
+  fill: #235ce2;
+}
+
+.btn-green {
+  background-color: #5ed45a;
+}
+.btn-green:hover {
+  background-color: #fff;
+  outline: 1px solid #5ed45a;
+  color: #5ed45a;
+  fill: #5ed45a;
+}
+.btn-green:hover svg {
+  fill: #5ed45a;
+}
+
+.btn-outline-blue {
+  background-color: #fff;
+  outline: 1px solid #235ce2;
+  color: #235ce2;
+  text-transform: uppercase;
+}
+.btn-outline-blue svg {
+  fill: #235ce2;
+}
+.btn-outline-blue:hover {
+  background-color: #235ce2;
+  color: #fff;
+}
+.btn-outline-blue:hover svg {
+  fill: #fff;
+}
+
+.site-main__l {
+  display: flex;
+}
+
+.section-service__list {
+  margin-top: 40px;
+}
+
+.list-article {
+  display: flex;
+  gap: 30px 3%;
+  flex-wrap: wrap;
+}
+.list-article__article {
+  flex: 0 0 31.3333333333%;
+}
+@media (max-width: 992px) {
+  .list-article__article {
+    flex: 0 0 47%;
+  }
+}
+@media (max-width: 552px) {
+  .list-article__article {
+    flex: 1 1 auto;
+  }
+}
+.list-article-four {
+  gap: 30px 2%;
+}
+.list-article-four__article {
+  flex: 0 0 23.5%;
+}
+
+.article {
+  border: 1px #eee solid;
+  background-color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease 0s;
+}
+.article:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.article:hover .article__img {
+  padding: 0;
+  padding-bottom: 30px;
+}
+.article__img {
+  padding: 30px;
+  padding-bottom: 0;
+  transition: all 0.3s ease 0s;
+}
+.article__link {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 260px;
+}
+@media (max-width: 702px) {
+  .article__link {
+    height: 200px;
+  }
+}
+.article__link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article__content {
+  margin-top: 10px;
+  padding: 30px;
+  padding-top: 0;
+}
+.article__title {
+  font-size: 20px;
+  line-height: 130%;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  border-bottom: 1px solid #ffffff;
+}
+@media (max-width: 767px) {
+  .article__title {
+    font-size: 16px;
+  }
+}
+.article__title:hover {
+  border-bottom: 1px solid #222;
+}
+.article__desc {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .article__desc {
+    font-size: 13px;
+  }
+}
+.article__button {
+  margin-top: 20px;
+}

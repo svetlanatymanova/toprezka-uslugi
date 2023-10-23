@@ -1,0 +1,244 @@
+.h1_block_line {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.site-main {
+    &__head {
+        display: flex;
+        gap: 30px;
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__left {
+        flex: 0 0 50%;
+        max-height: 600px;
+
+        position: relative;
+        top: 0;
+        left: 0;
+        @media (max-width: 992px) {
+            height: 300px;
+            flex: 1 1 auto;
+        }
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__right {
+        flex: 1 1 auto;
+    }
+    &__section {
+        margin-top: 60px;
+    }
+    &__buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        @media (max-width: 371px) {
+            width: 100%;
+        }
+    }
+}
+
+.cost {
+    display: flex;
+    flex-direction: column;
+    &__with {
+        color: #000000;
+    }
+    &__oldcost {
+        text-decoration: line-through;
+        font-size: 18px;
+        color: #000000;
+    }
+    &__cost {
+        & span {
+            font-size: 28px;
+            color: #0084ff;
+            font-weight: 800;
+        }
+    }
+}
+.btn {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    line-height: 1;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    color: white;
+    padding: 12px 15px;
+    transition: all 0.3s ease 0s;
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & svg {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+    }
+}
+
+.btn-blue {
+    background-color: #235ce2;
+    &:hover {
+        background-color: #fff;
+        outline: 1px solid #235ce2;
+        color: #235ce2;
+        & svg {
+            fill: #235ce2;
+        }
+    }
+}
+.btn-green {
+    background-color: #5ed45a;
+    &:hover {
+        background-color: #fff;
+        outline: 1px solid #5ed45a;
+        color: #5ed45a;
+        fill: #5ed45a;
+        & svg {
+            fill: #5ed45a;
+        }
+    }
+}
+.btn-outline-blue {
+    background-color: #fff;
+    outline: 1px solid #235ce2;
+    color: #235ce2;
+    text-transform: uppercase;
+    & svg {
+        fill: #235ce2;
+    }
+
+    &:hover {
+        background-color: #235ce2;
+        color: #fff;
+        & svg {
+            fill: #fff;
+        }
+    }
+}
+.site-main__l {
+    display: flex;
+}
+
+//Старый
+.section-service {
+    &__list {
+        margin-top: 40px;
+    }
+}
+.list-article {
+    display: flex;
+    gap: 30px 3%;
+    flex-wrap: wrap;
+    &__article {
+        flex: 0 0 31.3333333333%;
+        @media (max-width: 992px) {
+            flex: 0 0 47%;
+        }
+        @media (max-width: 552px) {
+            flex: 1 1 auto;
+        }
+    }
+    &-four {
+        gap: 30px 2%;
+
+        &__article {
+            flex: 0 0 23.5%;
+        }
+    }
+}
+.article {
+    border: 1px #eee solid;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease 0s;
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        & .article__img {
+            padding: 0;
+            padding-bottom: 30px;
+        }
+    }
+    &__img {
+        padding: 30px;
+        padding-bottom: 0;
+        transition: all 0.3s ease 0s;
+    }
+    &__link {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 260px;
+        @media (max-width: 702px) {
+            height: 200px;
+        }
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        margin-top: 10px;
+        padding: 30px;
+        padding-top: 0;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 130%;
+        color: #222;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        border-bottom: 1px solid #ffffff;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            border-bottom: 1px solid #222;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: #555555;
+        font-weight: 600;
+        @media (max-width: 767px) {
+            font-size: 13px;
+        }
+    }
+    &__button {
+        margin-top: 20px;
+    }
+}
